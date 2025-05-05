@@ -7,13 +7,13 @@ import java.sql.SQLException;
 public class DatabaseService {
     private static Connection conn = null;
 
-    // Method to create a new database connection
+   
     public static Connection createConn() {
         try {
-            // Load MySQL JDBC Driver
+           
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            // Connection URL
+           
             String url = "jdbc:mysql://localhost:3306/hospital?useSSL=false&serverTimezone=UTC";
             String username = "root"; // Your MySQL username
             String password = "Shanu@0108";     // Your MySQL password (empty in local, or "password" if set)
